@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Akan-names</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  </head>
+  <body background="https://images.unsplash.com/photo-1590154157344-1f15c6411f6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODl8fGNvZmZlZSUyMGxhcHRvcHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60 "  style="background-repeat: no-repeat; background-size: cover;" >
+      <div class="container">
+        <marquee behavior="alternate" direction="repeat"><strong><h1>Akan-name-calculator</h1></strong></marquee>
+        <label for="gender">
+            <p>choose gender: </p>
+            Male
+            <input id="male-input" type="radio" name="gender" value="male" required>
+            Female
+            <input id="female-input" type="radio" name="gender" value="black" required=''  />
+
+          </label>
+
+          <br>
+          <br>
+          <br>
+        <form class="myform" onsubmit="return getAkanName()">
+          <label for="year-of-birth">
+            Year:
+            <input id="year-input" type="number" name="year-of-birth" placeholder="#" value="" required>
+          </label>
+          <label for="month-of-birth">
+            Month:
+            <input id="month-input" type="number" name="month-of-birth" placeholder="#" value="" required>
+          </label>
+          <label for="day-of-birth">
+            Day:
+            <input id="day-input" type="number" name="day-of-birth" placeholder="#" value="" required>
+          </label>
+          <br>
+
+          <br><br>
+          <input id="get-name" type="submit" name="" value="show akan name">
+          <br><br>
+        </form>
+        <form onsubmit="return clearInput()">
+          
+          <input class="clear" type="submit" value="edit">
+        </form>
+
+
+        <h4 id = display-name><strong>Akan name</strong></h4>
+        <p id="result"></p>
+      </div>
+
+    <script src="js/script.js" ></script>
+
+  </body>
+</html>
