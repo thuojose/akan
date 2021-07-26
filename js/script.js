@@ -61,7 +61,7 @@ function getAkanName () {
     ];
   
     let femaleAkanNames = [
-      "Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"
+      "Akosua", "Adwoa", "Abena", "Akua", "Yaa", "Afua", "Ama"
     ];
   
     //generating and index value to select items on arrays
