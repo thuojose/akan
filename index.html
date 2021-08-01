@@ -1,56 +1,340 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Akan-names</title>
-    <link rel="stylesheet" href="css/style.css" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-  </head>
-  <body background="https://images.unsplash.com/photo-1590154157344-1f15c6411f6e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODl8fGNvZmZlZSUyMGxhcHRvcHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60 "  style="background-repeat: no-repeat; background-size: cover;" >
-      <div class="container">
-        <marquee behavior="alternate" direction="repeat"><strong><h1>Akan-name-calculator</h1></strong></marquee>
-        <label for="gender">
-            <p>choose gender: </p>
-            Male
-            <input id="male-input" type="radio" name="gender" value="male" required>
-            Female
-            <input id="female-input" type="radio" name="gender" value="female" required>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza</title>
 
-          </label>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-          <br>
-          <br>
-          <br>
-        <form class="myform" onsubmit="return getAkanName()">
-          <label for="year-of-birth">
-            Year:
-            <input id="year-input" type="number" name="year-of-birth" placeholder="#" value="" required>
-          </label>
-          <label for="month-of-birth">
-            Month:
-            <input id="month-input" type="number" name="month-of-birth" placeholder="#" value="" required>
-          </label>
-          <label for="day-of-birth">
-            Day:
-            <input id="day-input" type="number" name="day-of-birth" placeholder="#" value="" required>
-          </label>
-          <br>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
 
-          <br><br>
-          <input id="get-name" type="submit" name="" value="show akan name">
-          <br><br>
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>PIZZERIA</a>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#pizza-types">pizza-types</a>
+        <a href="#price">price</a>
+        <a href="#order">order</a>
+    </nav>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>AMAZONA PIZZERIA</h3>
+        <p>Amazona Pizzeria is making the most tasty and delicious pizza for you all.
+          Come and have a taste of our best pizzas and receive satisfactory services.</p>
+        <a href="#" class="btn">order now</a>
+    </div>
+
+    <div class="image">
+        <img src="images/ivan-torres-MQUqbmszGGM-unsplash.png" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- pizza-types section starts  -->
+
+<section class="pizza-types" id="pizza-types">
+
+    <h1 class="heading"> our <span>pizza-types</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img class="image" src="images/foad-roshan-Y6OgisiGBjM-unsplash (1).jpg" alt="">
+            <div class="content">
+                <img src="images/s-2.png" alt="">
+                <h3>cheese burger pizza</h3>
+                <p>crusted with macon and topped with pinneapple.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/likemeat-CbNAuxSZTFo-unsplash.jpg" alt="">
+            <div class="content">
+                <img src="images/s-2.png" alt="">
+                <h3>pepperoni</h3>
+                <p>crusted with marinated tikka chicken and topped with sausage.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/pinar-kucuk-Ae7jQFDTPk4-unsplash.jpg" alt="">
+            <div class="content">
+                <img src="images/s-2.png" alt="">
+                <h3>veg feast</h3>
+                <p>crusted withsweet corn-green pepper and topped with mushroom.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/jordan-nix-evA8uQLsUaE-unsplash.jpg" alt="">
+            <div class="content">
+                <img src="images/s-2.png" alt="">
+                <h3>meat deluxe</h3>
+                <p>crusted with beef pepperoni and topped with sandwich beef.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/thomas-tucker-MNtag_eXMKw-unsplash.jpg" alt="">
+            <div class="content">
+                <img src="images/s-2.png" alt="">
+                <h3>chicken hawaiian</h3>
+                <p>crusted with succulent bbq chicken - macon - sweetcorn and topped with red pepper.</p>
+            </div>
+        </div>
+        <div class="box">
+            <img class="image" src="images/quin-engle-lHUdfk5WGXc-unsplash.jpg" alt="">
+            <div class="content">
+                <img src="images/s-2.png" alt="">
+                <h3>boerewors</h3>
+                <p>crusted with succulent bbq chicken and topped with onions.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- pizza-types section ends -->
+
+<!-- price section starts  -->
+
+<section class="price" id="price">
+
+    <h1 class="heading"> price <span>per</span> pizza </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>cheese burger</h3>
+            <img src="images/foad-roshan-Y6OgisiGBjM-unsplash (1).jpg" alt="">
+            <input type="submit" value="$5.3-small,"class="btn">
+            <input type="submit" value="$8-medium"class="btn">
+            <input type="submit" value="$13.5-large"class="btn">
+             <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>  
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <h3>pepperoni</h3>
+            <img src="images/likemeat-CbNAuxSZTFo-unsplash.jpg" alt="">
+            <input type="submit" value="$5-small"class="btn">
+            <input type="submit" value="$8-medium"class="btn">
+            <input type="submit" value="$12-large"class="btn">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <h3>veg feast</h3>
+            <img src="images/pinar-kucuk-Ae7jQFDTPk4-unsplash.jpg" alt="">
+            <input type="submit" value="$5-small"class="btn">
+            <input type="submit" value="$7-medium"class="btn">
+            <input type="submit" value="$10.5-large"class="btn">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <h3>meat deluxe</h3>
+            <img src="images/jordan-nix-evA8uQLsUaE-unsplash.jpg" alt="">
+            <input type="submit" value="$5.5-small"class="btn">
+            <input type="submit" value="$8-medium,"class="btn">
+            <input type="submit" value="$13-large"class="btn">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <h3>chicken hawaiian</h3>
+            <img src="images/thomas-tucker-MNtag_eXMKw-unsplash.jpg" alt="">
+            <input type="submit" value="$6.5-small"class="btn">
+            <input type="submit" value="$9-medium"class="btn">
+            <input type="submit" value="$13.5-large"class="btn">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+        <div class="box">
+            <h3>boerewors</h3>
+            <img src="images/quin-engle-lHUdfk5WGXc-unsplash.jpg" alt="">
+            <input type="submit" value="$5-small"class="btn">
+            <input type="submit" value="$8-medium"class="btn">
+            <input type="submit" value="$12-large"class="btn">
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <a href="#" class="btn">order now</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- price section ends -->
+
+<!-- steps section starts  -->
+
+<div class="step-container">
+
+    <h1 class="heading">delivery <span>options</span></h1>
+
+    <section class="steps">
+
+        <div class="box">
+            <img src="images/alexandra-gorn-52jG7-FN22Y-unsplash.jpg" alt=""width="200px" height="200px">
+            <h3>choose your favorite pizza</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-2.jpg" alt="">
+            <h3>free and fast delivery</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-3.jpg" alt="">
+            <h3>easy payments methods</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-4.jpg" alt="">
+            <h3>and finally, enjoy your food</h3>
+        </div>
+    
+    </section>
+
+</div>
+
+<!-- steps section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+    <h1 class="heading"> <span>order</span> now </h1>
+
+    <div class="row">
+        
+        <div class="image">
+            <img src="images/zhuo-cheng-you-Eet5MP9K67c-unsplash.jpg" alt="">
+        </div>
+
+        <form action="">
+
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="amount">
+                <input type="size" placeholder="size">
+                <input type="text" placeholder="food name">
+                <input type="submit" value="total amount" class="btn">
+            </div>
+
+            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="order now" class="btn">
+            <div class="share"></div>
+            <input type="submit" value="delivered" class="btn">
+            <input type="submit" value=" not delivered" class="btn">
+            
+
         </form>
-        <form onsubmit="return clearInput()">
-          
-          <input class="clear" type="submit" value="edit">
-        </form>
+
+    </div>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+    </div>
+
+    <h1 class="credit"> </span> all rights reserved!    @2021</h1>
+</section>
+
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div>
 
 
-        <h4 id = display-name><strong>Akan name</strong></h4>
-        <p id="result"></p>
-      </div>
 
-    <script src="js/script.js" ></script>
 
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+
+</body>
 </html>
